@@ -4,6 +4,7 @@ printf "\033]0;Applio\007"
 
  export PYTORCH_ENABLE_MPS_FALLBACK=1
  export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0
+ export OMP_NUM_THREADS=1
  
 clear
 python app.py --open
